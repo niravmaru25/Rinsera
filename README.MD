@@ -1,11 +1,11 @@
-# Rinsera - Laundry Service Website
+# Rinsera - Laundry Management System
 
 Rinsera is a full-stack laundry service management web application built using PHP and MySQL.  
 The system provides separate role-based authentication for users and admins with features for laundry request management, pricing control, reports, notifications, and account security.
 
 ## Live Demo
 
-Live Website: https://rinsera.rf.gd
+Live Web Application: https://rinsera.rf.gd
 
 ---
 
