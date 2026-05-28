@@ -11,13 +11,13 @@
         exit();
     }
 
-    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+    if(!filter_var($new_email, FILTER_VALIDATE_EMAIL)){
         $_SESSION["msg"] = "<div class='msg error'>Enter valid email!</div>";
         header('Location: user.php?page=update_profile');
         exit();
     }
 
-    if(!preg_match("/^[6-9]\d{9}$/", $mobile)) {
+    if(!preg_match("/^[6-9]\d{9}$/", $new_mobile)) {
         $_SESSION["msg"] = "<div class='msg error'>Enter valid Mobile No.!</div>";
         header('Location: user.php?page=update_profile');
         exit();
