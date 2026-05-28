@@ -7,19 +7,19 @@
 
     if (empty($new_name) || empty($new_email) || empty($new_mobile)) {
         $_SESSION["msg"] = "<div class='msg error'>Details can not be empty!</div>";
-        header('Location: user.php?page=profile');
+        header('Location: user.php?page=update_profile');
         exit();
     }
 
     if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
         $_SESSION["msg"] = "<div class='msg error'>Enter valid email!</div>";
-        header('Location: user.php?page=profile');
+        header('Location: user.php?page=update_profile');
         exit();
     }
 
     if(!preg_match("/^[6-9]\d{9}$/", $mobile)) {
         $_SESSION["msg"] = "<div class='msg error'>Enter valid Mobile No.!</div>";
-        header('Location: user.php?page=profile');
+        header('Location: user.php?page=update_profile');
         exit();
     }
 
